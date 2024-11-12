@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export default function Todo() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
@@ -136,6 +135,21 @@ export default function Todo() {
           </div>
         </div>
 
+        <div className="flex flex-col space-y-2 mb-4">
+          <button
+            onClick={() => window.open("https://filebin.net/12z13ik0xa5dkni7", "_blank")}
+            className="px-4 py-2 rounded bg-indigo-500 text-white hover:bg-indigo-700"
+          >
+            A
+          </button>
+          <button
+            onClick={() => window.open("https://github.com/Bansal29/SSCD/blob/main/assign_1/Assign1.java", "_blank")}
+            className="px-4 py-2 rounded bg-indigo-500 text-white hover:bg-indigo-700"
+          >
+            B
+          </button>
+        </div>
+
         <div className="space-y-2">
           <h2 className="text-lg font-medium">Completed</h2>
           <div className="space-y-1">
@@ -173,6 +187,7 @@ export default function Todo() {
                   >
                     <Trash2Icon className="w-4 h-4" />
                   </button>
+
                 </div>
               </div>
             ))}
